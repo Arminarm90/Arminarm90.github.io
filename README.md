@@ -1,2 +1,179 @@
-# Arminarm90.github.io
-Results-driven Django Developer with over 3 years of experience in designing, developing, and deploying scalable web applications. Proficient in Python, Django, RESTful APIs, and front-end technologies. Strong ability to troubleshoot complex issues, optimize performance, and deliver user-centric solutions. Seeking to contribute to innovative projects in a dynamic team environment.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Armin Mozaffari | Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 950px;
+      background: #fff;
+      margin: 40px auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #3498db;
+    }
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    .title {
+      color: #3498db;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .contact, .section {
+      margin-top: 25px;
+    }
+    .contact p, .section p, .section li {
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    h2 {
+      color: #3498db;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      background: #ecf0f1;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="C:\Armin\CoDE\Resume\IMG_20250103_191555.jpg" alt="Profile Photo" class="profile-pic">
+      <div>
+        <h1>Armin Mozaffari</h1>
+        <div class="title">Django Back-End Developer</div>
+        <div class="contact">
+          <p>📍 Birjand, South Khorasan, Iran</p>
+          <p>📞 09010859574 | 📧 <a href="mailto:Armin.arm90@gmail.com">Armin.arm90@gmail.com</a></p>
+          <p>🔗 <a href="https://linkedin.com/in/armin-mozaffari-5b820a238" target="_blank">LinkedIn</a> | <a href="https://github.com/Arminarm90" target="_blank">GitHub</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Objective</h2>
+      <p>
+        Results-driven Django Developer with over 3 years of experience in designing, developing, and deploying scalable web applications. Proficient in Python, Django, RESTful APIs, and front-end technologies. Strong ability to troubleshoot complex issues, optimize performance, and deliver user-centric solutions. Seeking to contribute to innovative projects in a dynamic team environment.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">Django</div>
+        <div class="skill">DRF</div>
+        <div class="skill">Python</div>
+        <div class="skill">HTML & CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">JSON</div>
+        <div class="skill">PostgreSQL</div>
+        <div class="skill">SQLite</div>
+        <div class="skill">Git</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Redis</div>
+        <div class="skill">Nginx</div>
+        <div class="skill">Celery</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Professional Experience</h2>
+      <ul>
+        <li><strong>Studyways – Tehran, Iran</strong><br>
+          Django Back-End Developer (Sep 2024 – Present)
+          <ul>
+            <li>Built full application using Django and DRF.</li>
+            <li>ٌWorking under the IELTSWays umbrella.</li>
+          </ul>
+        </li>
+        <li><strong>IELTSWays Academy – Tehran, Iran</strong><br>
+            Django Back-End Developer (Jun 2024 – Present)
+            <ul>
+              <li>Built full application using Django and DRF.</li>
+              <li>Implemented new methods and maintained discretion on sensitive topics.</li>
+            </ul>
+          </li>
+        <li><strong>IELTSWays Academy – Tehran, Iran</strong><br>
+          Django Back-End Trainee (Apr 2024 – Jun 2024)
+          <ul>
+            <li>Built multiple DRF APIs and applications with mentor support.</li>
+            <li>Improved English and development skills.</li>
+          </ul>
+        </li>
+        <li><strong>Upwork – Remote</strong><br>
+          Freelancer (Jul 2023 – Present)
+          <ul>
+            <li>Applied to jobs, participated in interviews, and gained real-world experience.</li>
+          </ul>
+        </li>
+        <li><strong>THINK CODE LTD – Isfahan, Iran</strong><br>
+          Django Back-End Developer (Jul 2021 – May 2023)
+          <ul>
+            <li>Developed a BTRE project using Django methods.</li>
+            <li>Worked with databases and collaborated on Upwork projects.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>CFU, Birjand</strong> – Teacher Student</p>
+      <p><strong>Harvard University, CS50x Tehran</strong> – Computer Science & Machine Learning</p>
+    </div>
+
+    <div class="section">
+      <h2>Additional Skills</h2>
+      <ul>
+        <li>English as a Second Language</li>
+        <li>ICDL</li>
+        <li>Photoshop</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
