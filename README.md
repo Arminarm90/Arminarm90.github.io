@@ -1,2 +1,2 @@
 # Armin Mozaffari
-This Rep is for my Resume 
+My Resume And What I Do ...
