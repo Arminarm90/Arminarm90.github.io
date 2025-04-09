@@ -1,2 +1,2 @@
 # Arminarm90.github.io
-Resume
+Results-driven Django Developer with over 3 years of experience in designing, developing, and deploying scalable web applications. Proficient in Python, Django, RESTful APIs, and front-end technologies. Strong ability to troubleshoot complex issues, optimize performance, and deliver user-centric solutions. Seeking to contribute to innovative projects in a dynamic team environment.
