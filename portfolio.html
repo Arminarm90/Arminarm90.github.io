@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Armin Mozaffari</title>
+  <title>Armin Mozaffari — Projects</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -46,6 +46,7 @@
       object-fit: cover;
       display:block;
       cursor: zoom-in;
+      background: #e9eef6;
     }
     .project-body {
       padding: 14px;
@@ -62,13 +63,23 @@
     }
     .proj-desc {
       font-size:14px;
-      line-height:1.5;
+      line-height:1.6;
       color:#4b5563;
       margin:0;
       flex:1;
     }
+    .proj-meta {
+      display:flex;
+      gap:8px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
     .proj-tags { margin-top:8px; display:flex; gap:8px; flex-wrap:wrap; }
     .tag { background:#ecf0f1; padding:6px 8px; border-radius:6px; font-size:13px; }
+    .status { font-size:12px; padding:6px 8px; border-radius:8px; font-weight:600; }
+    .status.private { background:#fdecea; color:#c0392b; }
+    .status.frozen { background:#fff4e6; color:#b85f00; }
+    .status.public { background:#e8f8f5; color:#117a65; }
     .proj-actions { display:flex; gap:8px; margin-top:10px; }
     .btn {
       padding:8px 10px;
@@ -77,6 +88,9 @@
       cursor:pointer;
       font-weight:600;
       text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
     }
     .btn-primary { background:#3498db; color:#fff; }
     .btn-outline { background:transparent; border:1px solid #d0e6fb; color:#2980b9; }
@@ -109,74 +123,171 @@
 <body>
   <div class="wrap">
     <header>
-      <h1>Projects</h1>
+      <h1>Portfolio — Selected Projects</h1>
       <div>
-        <a class="back-link" href="index.html">◀ Back to resume </a>
+        <a class="back-link" href="index.html">◀ Back to resume</a>
       </div>
     </header>
 
     <section class="grid" id="projectsGrid">
-      <!-- Example project 1 -->
+
+      <!-- Project 1: Xminit -->
       <article class="project-card">
-        <img src="projects/project1.jpg" alt="Project 1 screenshot" class="project-thumb" data-full="projects/project1-large.jpg">
+        <img src="projects/xminit.jpg" alt="Xminit bot screenshot placeholder" class="project-thumb" data-full="projects/xminit-large.jpg">
         <div class="project-body">
-          <h3 class="proj-title">سامانه آزمون آنلاین (Django + DRF)</h3>
+          <h3 class="proj-title">Xminit — Telegram RSS Bot</h3>
           <p class="proj-desc">
-            یک اپلیکیشن مدیریت آزمون آنلاین با ثبت‌نام کاربران، بانک سوالات، ایجاد آزمون و گزارش‌گیری نمرات. بک‌اند با Django و DRF و فرانت ساده با Bootstrap.
+            Xminit is a Telegram bot that delivers curated updates to users by aggregating and parsing RSS feeds. It filters content, formats concise notifications, and pushes timely updates directly into users' chats. The bot includes scheduling, feed deduplication, and lightweight user preferences for topics and frequency.
           </p>
-          <div class="proj-tags">
-            <span class="tag">Django</span>
-            <span class="tag">DRF</span>
-            <span class="tag">PostgreSQL</span>
+
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Telegram Bot</span>
+              <span class="tag">RSS</span>
+              <span class="tag">Scheduling</span>
+            </div>
+            <div class="status private">Status: Private (Launched)</div>
           </div>
+
           <div class="proj-actions">
-            <a class="btn btn-primary" href="https://github.com/Arminarm90/online-exam" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn-outline" href="https://example-live-project1.com" target="_blank" rel="noopener">Live</a>
+            <a class="btn btn-primary" href="https://t.me/Xminit_bot" target="_blank" rel="noopener">Open Bot</a>
+            <a class="btn btn-outline" href="#" onclick="alert('Repository: Private')">Repository</a>
           </div>
         </div>
       </article>
 
-      <!-- Example project 2 -->
+      <!-- Project 2: Mylyzer -->
       <article class="project-card">
-        <img src="projects/project2.jpg" alt="Project 2 screenshot" class="project-thumb" data-full="projects/project2-large.jpg">
+        <img src="projects/mylyzer.jpg" alt="Mylyzer dashboard placeholder" class="project-thumb" data-full="projects/mylyzer-large.jpg">
         <div class="project-body">
-          <h3 class="proj-title">فروشگاه اینترنتی (Django, Celery, Redis)</h3>
+          <h3 class="proj-title">Mylyzer — Business Analysis Assistant</h3>
           <p class="proj-desc">
-            فروشگاه با سبد خرید، مدیریت سفارش، ارسال ایمیل و پردازش ناهمگام با Celery و Redis. پیاده‌سازی API برای اپ موبایل.
+            Mylyzer is a business analytics assistant (Telegram-based) that ingests customer data, runs behavioral analyses (e.g., RFM segmentation and TAM analysis), and returns actionable recommendations. The system combines statistical analytics, custom heuristics and AI-driven insights so users can ask for tailored strategies, segment reports, and growth suggestions via conversational queries.
           </p>
-          <div class="proj-tags">
-            <span class="tag">Django</span>
-            <span class="tag">Celery</span>
-            <span class="tag">Redis</span>
+
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="tag">Python</span>
+              <span class="tag">APIs</span>
+              <span class="tag">RFM</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">NLP / AI</span>
+            </div>
+            <div class="status private">Status: Private</div>
           </div>
+
           <div class="proj-actions">
-            <a class="btn btn-primary" href="https://github.com/Arminarm90/ecommerce" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn-outline" href="#" onclick="alert('Live demo unavailable')" >Live</a>
+            <a class="btn btn-outline" href="#" onclick="alert('Repository: Private')">Repository</a>
+            <a class="btn btn-outline" href="#" onclick="alert('Demo: Internal / Restricted')">Demo</a>
           </div>
         </div>
       </article>
 
-      <!-- Example project 3 -->
+      <!-- Project 3: Studyways -->
       <article class="project-card">
-        <img src="projects/project3.jpg" alt="Project 3 screenshot" class="project-thumb" data-full="projects/project3-large.jpg">
+        <img src="projects/studyways.jpg" alt="Studyways learning platform placeholder" class="project-thumb" data-full="projects/studyways-large.jpg">
         <div class="project-body">
-          <h3 class="proj-title">تحلیل داده و داشبورد</h3>
+          <h3 class="proj-title">Studyways — Memory Training Platform</h3>
           <p class="proj-desc">
-            پردازش داده‌های تراکنش، تحلیل RFM و ساخت داشبورد گزارش با نمودارها و خروجی اکسل برای تیم‌های مارکتینگ.
+            Studyways is a web application designed to improve short-term memory for language learners using techniques such as mirroring and spaced repetition. The platform delivers targeted reading and listening exercises, adaptive review schedules, and performance tracking to help users retain vocabulary and comprehension skills more effectively.
           </p>
-          <div class="proj-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Pandas</span>
-            <span class="tag">Plotly</span>
+
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">React</span>
+              <span class="tag">Docker</span>
+              <span class="tag">DRF</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="status frozen">Status: Frozen (Private)</div>
           </div>
+
           <div class="proj-actions">
-            <a class="btn btn-primary" href="https://github.com/Arminarm90/data-dashboard" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn-outline" href="#">Private</a>
+            <a class="btn btn-outline" href="#" onclick="alert('Repository: Private / Archived')">Repository</a>
+            <a class="btn btn-outline" href="#" onclick="alert('Project status: Frozen')">Details</a>
           </div>
         </div>
       </article>
 
-      <!-- Add more project-card blocks as needed -->
+      <!-- Project 4: IELTSWAYS -->
+      <article class="project-card">
+        <img src="projects/ieltsways.jpg" alt="IELTSWAYS platform placeholder" class="project-thumb" data-full="projects/ieltsways-large.jpg">
+        <div class="project-body">
+          <h3 class="proj-title">IELTSWAYS — IELTS Preparation Platform</h3>
+          <p class="proj-desc">
+            IELTSWAYS is an education site focused on teaching the four IELTS skills with modern instructional methods and scalable content. The platform was designed with internationalization in mind and includes structured lessons, practice tests, and progress tracking to prepare learners for global exams.
+          </p>
+
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="tag">Django</span>
+              <span class="tag">Education</span>
+              <span class="tag">Internationalization</span>
+            </div>
+            <div class="status frozen">Status: Frozen (Private)</div>
+          </div>
+
+          <div class="proj-actions">
+            <a class="btn btn-outline" href="#" onclick="alert('Repository: Private / Archived')">Repository</a>
+            <a class="btn btn-outline" href="#" onclick="alert('Project status: Frozen')">Details</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5: BTRE Project -->
+      <article class="project-card">
+        <img src="projects/btre.jpg" alt="BTRE property marketplace placeholder" class="project-thumb" data-full="projects/btre-large.jpg">
+        <div class="project-body">
+          <h3 class="proj-title">BTRE — Real Estate Marketplace</h3>
+          <p class="proj-desc">
+            BTRE is a property listing and marketplace platform that enables users to publish real-estate ads and manage transactions. Features include listing management, search and filters, contact flows between buyers and sellers, and admin moderation tools. The backend was built with Django and PostgreSQL.
+          </p>
+
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="status public">Status: Public</div>
+          </div>
+
+          <div class="proj-actions">
+            <a class="btn btn-primary" href="https://github.com/Arminarm90/btre_project" target="_blank" rel="noopener">View Repository</a>
+            <a class="btn btn-outline" href="#" onclick="alert('Live demo: not available')">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6: Face Recognition Software -->
+      <article class="project-card">
+        <img src="projects/face-recognition.jpg" alt="Face recognition software placeholder" class="project-thumb" data-full="projects/face-recognition-large.jpg">
+        <div class="project-body">
+          <h3 class="proj-title">Custom Face Recognition Solutions</h3>
+          <p class="proj-desc">
+            Customizable face recognition software tailored for enterprise use cases such as attendance systems and security camera integrations. Implementations include native desktop components and integrations with camera feeds, optimized for performance and accuracy in real-world scenarios.
+          </p>
+
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span class="tag">C#</span>
+              <span class="tag">C++</span>
+              <span class="tag">.NET</span>
+              <span class="tag">Computer Vision</span>
+            </div>
+            <div class="status private">Status: No public repository</div>
+          </div>
+
+          <div class="proj-actions">
+            <a class="btn btn-outline" href="#" onclick="alert('Repo: None')">Repository</a>
+            <a class="btn btn-outline" href="#" onclick="alert('Contact for demo / customization')">Contact</a>
+          </div>
+        </div>
+      </article>
+
     </section>
   </div>
 
