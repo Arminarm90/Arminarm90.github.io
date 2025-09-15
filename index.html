@@ -20,6 +20,29 @@
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     }
+    /* new: top nav */
+    .top-nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+    }
+    .nav-link {
+      background: transparent;
+      border: 1px solid transparent;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      background: #ecf6ff;
+      border-color: #d0eaff;
+      text-decoration: none;
+    }
+
     .header {
       display: flex;
       align-items: center;
@@ -76,10 +99,25 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* responsive tweaks */
+    @media (max-width: 640px) {
+      .header { gap: 16px; }
+      .profile-pic { width: 120px; height: 120px; }
+      h1 { font-size: 28px; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
+
+    <!-- top nav with link to portfolio -->
+    <div class="top-nav">
+      <a class="nav-link" href="portfolio.html">نمونه‌کارها / Portfolio</a>
+      <a class="nav-link" href="https://linkedin.com/in/armin-mozaffari-5b820a238" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="nav-link" href="https://github.com/Arminarm90" target="_blank" rel="noopener">GitHub</a>
+    </div>
+
     <div class="header">
       <img src="Profile.jpg" alt="Profile Photo" class="profile-pic">
       <div>
@@ -88,11 +126,12 @@
         <div class="contact">
           <p>📍 Birjand, South Khorasan, Iran</p>
           <p>📧 <a href="mailto:Armin.arm90@gmail.com">Armin.arm90@gmail.com</a></p>
-          <p>🔗 <a href="https://linkedin.com/in/armin-mozaffari-5b820a238" target="_blank">LinkedIn</a> | <a href="https://github.com/Arminarm90" target="_blank">GitHub</a></p>
+          <p>🔗 <a href="https://linkedin.com/in/armin-mozaffari-5b820a238" target="_blank" rel="noopener">LinkedIn</a> | <a href="https://github.com/Arminarm90" target="_blank" rel="noopener">GitHub</a></p>
         </div>
       </div>
     </div>
 
+    <!-- rest of your content unchanged -->
     <div class="section">
       <h2>Objective</h2>
       <p>
